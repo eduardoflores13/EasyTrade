@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoblanco"
+    tools:context=".registro_activity">
+
+    <TextView
+        android:id="@+id/txvregistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/registrate"
+        android:textColor="@color/colorprincipal"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvfotoperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/fotoperfil"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvregistrate" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvfotoperfil" />
+
+    <Button
+        android:id="@+id/btnsubir"
+        android:layout_width="184dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorfoto"
+        android:backgroundTint="@color/colorfoto"
+        android:fontFamily="@font/roboto"
+        android:text="@string/subir"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="278dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorprincipal"
+        android:backgroundTint="@color/colorprincipal"
+        android:fontFamily="@font/roboto"
+        android:text="@string/subir"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtelefono"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/guardar" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grisfondo"
+        android:ems="10"
+        android:hint="Nombre..."
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvdatospersonales" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfocontacto" />
+
+    <EditText
+        android:id="@+id/txtapellido"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grisfondo"
+        android:ems="10"
+        android:hint="Apellido..."
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
+
+    <EditText
+        android:id="@+id/txtelefono"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/grisfondo"
+        android:ems="10"
+        android:hint="Teléfono..."
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfocontacto" />
+
+    <TextView
+        android:id="@+id/txvdatospersonales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/datospersonales"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsubir" />
+
+    <TextView
+        android:id="@+id/txtinfocontacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/datospersonales"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtapellido"
+        tools:text="@string/infocontacto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

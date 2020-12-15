@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".crearcuenta_activity">
+
+    <TextView
+        android:id="@+id/txviniciarsesion"
+        android:layout_width="251dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/iniciosesion"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorprincipal"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvpreguntacuenta" />
+
+    <TextView
+        android:id="@+id/txvpreguntacuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/preguntacuenta"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncrearcuenta" />
+
+    <Button
+        android:id="@+id/btncrearcuenta"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorprincipal"
+        android:backgroundTint="@color/colorprincipal"
+        android:fontFamily="@font/roboto"
+        android:shadowColor="@color/white"
+        android:text="@string/crearcuenta"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail3" />
+
+    <ImageView
+        android:id="@+id/imvlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/easytrade" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/grisfondo"
+        android:ems="10"
+        android:hint="Ingrese su correo electrónico..."
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvlogo" />
+
+    <EditText
+        android:id="@+id/txtemail2"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grisfondo"
+        android:ems="10"
+        android:hint="Ingresar contraseña..."
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+    <EditText
+        android:id="@+id/txtemail3"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/grisfondo"
+        android:ems="10"
+        android:hint="Confirme su contraseña..."
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

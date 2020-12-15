@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EasyTrade</string>
+    <string name="iniciosesion">Iniciar Sesión</string>
+    <string name="google">Iniciar Sesión con Google</string>
+    <string name="oo">O</string>
+    <string name="cuenta">Crea una cuenta</string>
+    <string name="cuentau"><u>Crea una cuenta</u></string>
+    <string name="crearcuenta">Crear cuenta</string>
+    <string name="preguntacuenta">¿Ya tienes una cuenta?</string>
+    <string name="registrate">Regístrate</string>
+    <string name="fotoperfil">Foto de perfil</string>
+    <string name="subir">Subir imagen</string>
+    <string name="datospersonales">Datos Personales</string>
+    <string name="infocontacto">Información de Contacto</string>
+    <string name="guardar">Guardar y Continuar</string>
+</resources>
