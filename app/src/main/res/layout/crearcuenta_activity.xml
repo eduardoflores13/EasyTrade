@@ -35,6 +35,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btncrearcuenta" />
 
+
+
     <Button
         android:id="@+id/btncrearcuenta"
         android:layout_width="310dp"
