@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngoogle" />
+        app:layout_constraintTop_toBottomOf="@+id/google_button" />
 
     <Button
         android:id="@+id/btniniciarsesion"
@@ -90,20 +90,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
-    <Button
-        android:id="@+id/btngoogle"
-        android:layout_width="310dp"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_button"
+        android:layout_width="316dp"
         android:layout_height="57dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:shadowColor="@color/white"
         android:text="@string/google"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btniniciarsesion" />
 

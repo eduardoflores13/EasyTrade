@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "73162492130",
+    "project_id": "easytrade-emj",
+    "storage_bucket": "easytrade-emj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73162492130:android:e2853a36102a706a68b6bb",
+        "android_client_info": {
+          "package_name": "com.example.easytrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73162492130-pbumujcjbcsj0pfs5ou12bmvnjdmhaum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.easytrade",
+            "certificate_hash": "1321b2f84d3488ba4d7552d22fadc178eb72cf0c"
+          }
+        },
+        {
+          "client_id": "73162492130-c43mrcoa09slkcaloit2g7oe049l6it8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sOEpPlCj1c6IzojDGKAyPonwn2PfW9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73162492130-c43mrcoa09slkcaloit2g7oe049l6it8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
