@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoblanco"
+    tools:context=".registro_activity">
+
+    <TextView
+        android:id="@+id/txvtelefono3"
+        android:layout_width="154dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/roboto"
+        android:text="telefono"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txvcontacto"
+        app:layout_constraintTop_toBottomOf="@+id/txvnombreofertante2" />
+
+    <TextView
+        android:id="@+id/txvemail"
+        android:layout_width="244dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/roboto"
+        android:text="email"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txvcontacto"
+        app:layout_constraintTop_toBottomOf="@+id/txvtelefono" />
+
+    <TextView
+        android:id="@+id/txvemail2"
+        android:layout_width="244dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/roboto"
+        android:text="email"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txvcontacto"
+        app:layout_constraintTop_toBottomOf="@+id/txvtelefono3" />
+
+    <TextView
+        android:id="@+id/txvtelefono"
+        android:layout_width="154dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="telefono"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txvcontacto"
+        app:layout_constraintTop_toBottomOf="@+id/txvnombreofertante" />
+
+    <TextView
+        android:id="@+id/txvtelefono2"
+        android:layout_width="154dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="telefono"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txvcontacto"
+        app:layout_constraintTop_toBottomOf="@+id/txvnombreofertante" />
+
+    <TextView
+        android:id="@+id/txvofertante"
+        android:layout_width="105dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/ofertante"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfocontacto" />
+
+    <TextView
+        android:id="@+id/txvaceptaoferta"
+        android:layout_width="216dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/aceptaoferta"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/txvcontacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/contacto"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvnombreofertante" />
+
+    <TextView
+        android:id="@+id/txvcontacto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/contacto"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvnombreofertante2" />
+
+    <TextView
+        android:id="@+id/txvnombreofertante"
+        android:layout_width="249dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/roboto"
+        android:text="Nombre y apellido"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvofertante" />
+
+    <TextView
+        android:id="@+id/txvnombreofertante2"
+        android:layout_width="249dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="Nombre y apellido"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvaceptaoferta" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvemail" />
+
+    <EditText
+        android:id="@+id/txaviso"
+        android:layout_width="351dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:inputType="textLongMessage|textMultiLine"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/aviso"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvemail2" />
+
+    <TextView
+        android:id="@+id/txtinfocontacto"
+        android:layout_width="326dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="43dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/infocontacto"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/infocontacto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
