@@ -13,25 +13,24 @@
     <string name="datospersonales">Datos Personales</string>
     <string name="infocontacto">Información de Contacto</string>
     <string name="guardar">Guardar y Continuar</string>
-<<<<<<< HEAD
+
     <string name="title_activity_intercambios_activity">intercambios_activity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="nuevoarticulo">Nuevo Artículo</string>
     <string name="fotografias">Fotografías</string>
-    <string name="descripcion">Descripción</string>
     <string name="seleccionar">Seleccionar...</string>
     <string name="nombre">Nombre</string>
     <string name="agregararticulo">Agregar Artículo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-=======
+
     <string name="menu1">Artículos de cambio</string>
     <string name="menu2">Ofertas Recibidas</string>
     <string name="descripcion">Descripción del artículo</string>
     <string name="nombrearticulo">Nombre del artículo</string>
     <string name="aceptar">Aceptar Oferta</string>
-    <string name="negar">RECHASAR OFERTA</string>
+    <string name="negar">RECHAZAR OFERTA</string>
     <string name="ofertante">Ofertante</string>
     <string name="contacto">Contacto</string>
     <string name="aceptaoferta">Quien acepta la oferta</string>
@@ -39,5 +38,5 @@
 
 
 
->>>>>>> a790e0d11876b5f4a8b95357c1a1904ad87deeca
+
 </resources>
