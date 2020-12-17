@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         linkcuenta.setOnClickListener {
             linkcuenta.setText(R.string.cuentau)
             startActivity(intentCrearCuenta)
-
         }
     }
 
@@ -47,9 +46,8 @@ class MainActivity : AppCompatActivity() {
         //ING: "Validar que no exista otra instancia corriendo"
         val usuario = FirebaseAuth.getInstance().currentUser
         if(usuario != null){
-            val intentInicio = Intent(this, registro_activity::class.java)
+            val intentInicio = Intent(this, intercambios_activity::class.java)
             startActivity(intentInicio)
-            finish()
         }
     }
 

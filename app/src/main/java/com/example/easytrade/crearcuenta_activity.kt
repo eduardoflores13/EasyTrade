@@ -12,11 +12,10 @@ class crearcuenta_activity : AppCompatActivity() {
         val iniciosesion:TextView = findViewById(R.id.txviniciarsesion)
         val registro:TextView = findViewById(R.id.btncrearcuenta)
 
-        val intentAtras = Intent(this, MainActivity::class.java)
         val intentCrear = Intent(this, registro_activity::class.java)
 
         iniciosesion.setOnClickListener {
-            startActivity(intentAtras)
+            onBackPressed()
         }
 
         registro.setOnClickListener {

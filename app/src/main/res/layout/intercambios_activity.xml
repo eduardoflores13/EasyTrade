@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".intercambios_activity">
 
+    <Button
+        android:id="@+id/btncerrar"
+        android:layout_width="137dp"
+        android:layout_height="46dp"
+        android:background="@color/colorprincipal"
+        android:fontFamily="@font/roboto"
+        android:text="Cerrar Sesión"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
     <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/intercambiosAppBarLayout">
+        android:id="@+id/intercambiosAppBarLayout"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncerrar">
 
         <com.google.android.material.tabs.TabLayout
-            android:layout_width="match_parent"
             android:id="@+id/intercambiostab"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/white"
             app:tabBackground="@color/white"
             app:tabGravity="fill"
@@ -27,10 +44,12 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/intercambiosviewpager"
-        android:layout_below="@+id/intercambiosAppBarLayout"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intercambiosAppBarLayout" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
