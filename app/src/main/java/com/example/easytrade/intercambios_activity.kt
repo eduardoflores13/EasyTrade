@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_articuloscambiofragment.*
 
-class intercambios_activity : AppCompatActivity(), ArticuloClickListener {
+class intercambios_activity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,12 +29,17 @@ class intercambios_activity : AppCompatActivity(), ArticuloClickListener {
         setUpTabs()
 
         val btncerrar = findViewById<Button>(R.id.btncerrar)
+        val btnnuevo = findViewById<Button>(R.id.btnnuevo)
 
         btncerrar.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             finish()
         }
 
+        btnnuevo.setOnClickListener {
+            val intentnuevo = Intent(this, nuevoarticulo_activity::class.java)
+            startActivity(intentnuevo)
+        }
 
 
     }
@@ -47,14 +52,6 @@ class intercambios_activity : AppCompatActivity(), ArticuloClickListener {
         adapter.addFragment(misarticulosfragment(),"Mis artículos")
         viewPager.adapter = adapter
         tab.setupWithViewPager(viewPager)
-
-    }
-
-
-    override fun articuloClicked(articulo:Articulo){
-        //val intentarticulo = Intent(this, detalleArticulo::class.java)
-        //intent.putExtra("Articulo", articulo)
-        //startActivity(intentarticulo)
     }
 
 

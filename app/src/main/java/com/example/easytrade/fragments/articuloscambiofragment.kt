@@ -1,6 +1,8 @@
 package com.example.easytrade.fragments
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Parcelable
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,10 +12,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.easytrade.ArticuloClickListener
-import com.example.easytrade.ArticulosRecyclerViewAdapter
+import com.example.easytrade.*
 import com.example.easytrade.R
-import com.example.easytrade.intercambios_activity
 import com.example.easytrade.modelos.Articulo
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_articuloscambiofragment.*
@@ -72,7 +72,7 @@ class articuloscambiofragment : Fragment(), ArticuloClickListener {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("No se que contexto debe ir")
+                TODO("Hay que ver que context usar, no funciona this, ni context")
             }
 
         }
@@ -80,7 +80,15 @@ class articuloscambiofragment : Fragment(), ArticuloClickListener {
     }
 
     override fun articuloClicked(articulo: Articulo) {
-        TODO("Not yet implemented")
+        val intent = Intent(context,detallearticulo_activity::class.java)
+        intent.putExtra("nombre", articulo.nombreArticulo)
+        intent.putExtra("descripcion", articulo.descripcionArticulo)
+        intent.putExtra("urlfoto",articulo.urlfoto)
+        intent.putExtra("idpropietario", articulo.idPropietario)
+        intent.putExtra("idarticulo", articulo.idArticulo)
+        startActivity(intent)
     }
 
 }
+
+

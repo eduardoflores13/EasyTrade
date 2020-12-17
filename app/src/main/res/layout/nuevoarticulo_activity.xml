@@ -16,7 +16,7 @@
         android:background="@color/colorprincipal"
         android:backgroundTint="@color/colorprincipal"
         android:fontFamily="@font/roboto"
-        android:text="@string/subir"
+        android:text="@string/agregararticulo"
         android:textAllCaps="false"
         android:textSize="19sp"
         android:textStyle="bold"

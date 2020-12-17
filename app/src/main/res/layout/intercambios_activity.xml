@@ -21,6 +21,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
 
+    <Button
+        android:id="@+id/btnnuevo"
+        android:layout_width="137dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/teal_700"
+        android:fontFamily="@font/roboto"
+        android:text="Nuevo Articulo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btncerrar"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/intercambiosAppBarLayout"
         android:layout_width="411dp"

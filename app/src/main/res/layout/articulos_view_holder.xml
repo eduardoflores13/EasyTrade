@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/fondoholders">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/imvproducto"
@@ -25,7 +24,7 @@
             android:layout_height="40dp"
             android:text="TextView"
             android:textColor="@color/colorprincipal"
-            android:textSize="26sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -35,5 +34,7 @@
             android:text="TextView"
             android:textColor="@color/black"
             android:textSize="16sp" />
+
     </LinearLayout>
+
 </LinearLayout>
