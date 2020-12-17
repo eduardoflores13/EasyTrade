@@ -5,39 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".detallearticulo_activity">
 
-    <TextView
-        android:id="@+id/txvmenucambios"
-        android:layout_width="209dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/menu1"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/colorprincipal"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvdescripcion" />
-
-    <TextView
-        android:id="@+id/txvmenuofertas"
-        android:layout_width="178dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="5dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/menu2"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/colorprincipal"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvdescripcion" />
 
     <TextView
         android:id="@+id/txvnombrearticulo"
@@ -80,12 +50,36 @@
         tools:layout_editor_absoluteY="48dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/articulosviewpager"
+        android:layout_width="415dp"
+        android:layout_height="344dp"
+        android:layout_below="@+id/articulosAppBarLayout"
+        app:layout_constraintTop_toBottomOf="@+id/articulosAppBarLayout"
+        tools:layout_editor_absoluteX="-2dp"></androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/articulosAppBarLayout"
+        android:layout_width="413dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvmenucambios"
-        android:layout_width="411dp"
-        android:layout_height="354dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="247dp" />
+        tools:layout_editor_absoluteY="336dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/articulostab"
+            android:layout_width="413dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            app:tabBackground="@color/white"
+            app:tabGravity="fill"
+            app:tabInlineLabel="true"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/estilotab"
+            app:tabTextColor="@color/colorprincipal" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
