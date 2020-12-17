@@ -55,7 +55,7 @@
         android:ems="10"
         android:gravity="top"
         android:hint="Descripción..."
-        android:inputType="textPersonName"
+        android:inputType="textShortMessage"
         android:paddingStart="15dp"
         android:paddingTop="15dp"
         android:paddingEnd="15dp"
